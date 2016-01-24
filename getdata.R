@@ -1,4 +1,4 @@
-## assumes .zip file household_power_consumption.txt is downloaded in the working directory
+## assumes .zip file household_power_consumption.txt is downloaded in the working directory already
 
 power<-read.table("household_power_consumption.txt",sep=";",header=T,na.strings="?")
 power$DateTime<- as.POSIXct(paste(power$Date, power$Time), format="%d/%m/%Y %H:%M:%S")
