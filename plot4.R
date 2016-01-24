@@ -8,6 +8,6 @@ legend("topright", c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),
        col=c("black","blue","red"), lty=1, cex=.6)
 plot(pow2$DateTime, pow2$Global_reactive_power, type="l", ylab= "Global_reactive_power",xlab="datetime")
 par(plot4.par)
-
+## export png file
 dev.copy(png,'plot4.png',width=480,height=480,units="px")
 dev.off()
