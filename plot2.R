@@ -3,5 +3,6 @@ plot2<-with (pow2,
                   type="l", 
                   ylab = "Global Active Power (kilowatts)")
 )
+## export chart to png
 dev.copy(png,'plot2.png',width=480,height=480,units="px")
 dev.off()
